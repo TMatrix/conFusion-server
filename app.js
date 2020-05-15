@@ -6,7 +6,7 @@ var logger = require("morgan");
 var session = require("express-session");
 var FileStore = require("session-file-store")(session);
 var passport = require("passport");
-var authenticate = require("./athenticate");
+var authenticate = require("./authenticate");
 var config = require("./config");
 
 var indexRouter = require("./routes/index");

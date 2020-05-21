@@ -73,7 +73,7 @@ router.post("/login", cors.corsWithOptions, (req, res, next) => {
 				err: info,
 			});
 		}
-		res.logIn(user, (err) => {
+		req.logIn(user, (err) => {
 			if (err) {
 				res.statusCode = 401;
 				res.setHeader("Content-Type", "application/json");
